@@ -246,9 +246,10 @@ function setupWindow(win, isWeb) {
 
 function initWindow(url, webContents) {
 	let win = new BrowserWindow({
-		width: 1600,
-		height: 900,
+		width: 2560,
+		height: 1440,
 		show: false,
+		frame: false,
 		webContents: webContents,
 		webPreferences: {
 			preload: path.join(__dirname, 'preload/global.js')
